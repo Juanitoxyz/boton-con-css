@@ -1,0 +1,48 @@
+.btn-contenedor {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 0;
+}
+
+.btn {
+  display: inline-block;
+  background-color: red;
+  text-decoration: none;
+  width: 200px;
+  height: 40px;
+  margin: 24px 0;
+  box-shadow: inset 0 4px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn:hover {
+  background-color: green;
+}
+
+.btn.hecho::after,
+.btn.hecho::before {
+  content: "pasar por encima";
+  position: absolute;
+  top: 0px;
+  text-align: center;
+  width: 100%;
+  color: rgb(194, 165, 165);
+  line-height: 2.5;
+
+}
+
+.btn.btn.hecho:hover::after {
+  top: -36px;
+}
+
+.btn.btn.hecho:hover::before {
+  top: 36px;
+}
+
+.btn.btn.hecho:hover::before {
+  content: "¡Hecho!";
+  top: 0px;
+  text-align: center;
+  width: 100%;
+  color: white;
+}
